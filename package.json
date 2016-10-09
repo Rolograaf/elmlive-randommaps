@@ -1,0 +1,31 @@
+{
+  "name": "elmlive-randommaps",
+  "version": "1.0.0",
+  "description": "elmlive random maps (fuzz testing)",
+  "main": "index.js",
+  "scripts": {
+    "test": "elm-test",
+    "test-init" : "./node_modules/.bin/elm-test init",
+    "elm-live": "elm-live Main.elm --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rolograaf/elmlive-randommaps.git"
+  },
+  "keywords": [
+    "elm",
+    "fuzz",
+    "testing"
+  ],
+  "author": "Rolograaf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rolograaf/elmlive-randommaps/issues"
+  },
+  "homepage": "https://github.com/Rolograaf/elmlive-randommaps#readme",
+  "devDependencies": {
+    "elm": "0.17.1",
+    "elm-live": "2.5.1",
+    "elm-test": "0.17.3"
+  }
+}
