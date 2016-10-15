@@ -4,6 +4,8 @@ import Test exposing (..)
 import Expect
 import String
 import Map
+import Dict exposing (Dict)
+import Maps.Town
 
 
 mapTests : Test
@@ -20,7 +22,7 @@ mapTests =
         , test "any with first points false, but others true" <|
             \() ->
                 Map.any (\tile -> tile == "grass")
-                    (\{ x } ->
+                    (\( x, y ) ->
                         if x == 0 then
                             "rock"
                         else
@@ -30,7 +32,7 @@ mapTests =
         , test "any with first row false, but others true" <|
             \() ->
                 Map.any (\tile -> tile == "grass")
-                    (\{ y } ->
+                    (\( x, y ) ->
                         if y == 0 then
                             "rock"
                         else
@@ -40,19 +42,25 @@ mapTests =
         ]
 
 
+townMapTests : Test
+townMapTests =
+    describe "Town Map generation"
+        [ test "map contains some grass" <|
+            \() ->
+                Maps.Town.map
+                    |> Map.any (\tile -> tile == "grass")
+                    |> Expect.true "Expected map to contain grass"
+        , test "map contains some road" <|
+            \() ->
+                Maps.Town.map
+                    |> Map.any (\tile -> tile == "road")
+                    |> Expect.true "Expected map to contain some road"
+        ]
+
+
 all : Test
 all =
     describe "all tests"
-        [ mapTests ]
-
-
-
--- all : Test
--- all =
---     describe "Town Map generation"
---         [ test "map contains grass" <|
---             \() ->
---                 createRandomMap
---                     |> Map.any (\tile -> tile == "grass")
---                     |> Expect.true
---         ]
+        [ mapTests
+        , townMapTests
+        ]

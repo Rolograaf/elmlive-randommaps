@@ -4,9 +4,9 @@
   "description": "elmlive random maps (fuzz testing)",
   "main": "index.js",
   "scripts": {
-    "test": "elm-test",
+    "test": "elm-test || true",
     "test-init" : "./node_modules/.bin/elm-test init",
-    "elm-live": "elm-live Main.elm --open"
+    "elm-live": "elm-live src/Main.elm --open"
   },
   "repository": {
     "type": "git",
