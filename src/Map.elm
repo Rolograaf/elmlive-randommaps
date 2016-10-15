@@ -1,4 +1,4 @@
-module Map exposing (Point, Tile, any, dictMap)
+module Map exposing (Point, Tile, any, dictMap, Map)
 
 import Dict exposing (Dict)
 

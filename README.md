@@ -2,7 +2,9 @@
 
 ## Following along @avh4 #elmlive [youtube 5 parts starting here](https://www.youtube.com/watch?v=rgdZZuM513w)
 
-![First try Random Map with tiles](FirstRandomMap.jpg)
+"Today we learn about fuzz tests (property tests) and try to make a random map generator using test-driven development."
+
+![First random map with tiles](FirstRandomMap.jpg) ![Another Random Map with tiles](AnotherRandomMap.jpg)
 
 Code is at <https://github.com/ElmLive/random-maps/tree/ElmLive-2016-10-02>
 
