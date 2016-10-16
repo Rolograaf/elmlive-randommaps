@@ -6,11 +6,15 @@
 
 "Today we learn about fuzz tests (property tests) and try to make a random map generator using test-driven development."
 
+<<<<<<< HEAD
 ## some Town Maps during the elmlive session
 
 ![First random map with tiles](./img/FirstRandomMap.jpg) ![Another Random Map with tiles](./img/AnotherRandomMap.jpg)
 
 ![Random map with 3 doors and some roads](./img/RandomMapwithDoors.jpg)![Random doors in Random town](img/RandomMapRandomDoors.jpg)
+=======
+![First random map with tiles](./img/FirstRandomMap.jpg) ![Another Random Map with tiles](./img/AnotherRandomMap.jpg)
+>>>>>>> origin/master
 
 Code is at <https://github.com/ElmLive/random-maps/tree/ElmLive-2016-10-02>
 
